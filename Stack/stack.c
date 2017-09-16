@@ -21,7 +21,6 @@ void push(stack *st, int item) {
 		psh->prev = st->top;
 		st->top = psh;
 
-		psh->next = NULL;
 		psh->item = item;
 
 		st->size++;
