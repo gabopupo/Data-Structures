@@ -17,9 +17,8 @@ struct list {
 
 list *create();
 void add(list *, char);
-node *search(list *, char);
+int search(list *, char);
 void remove_node(list *, char);
-//void change
 void dump(list *);
 void destroy(list **);
 

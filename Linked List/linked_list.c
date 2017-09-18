@@ -38,14 +38,14 @@ void add(list *l, char i) {
 	(l->size)++;
 }
 
-node *search(list *l, char i) {
+int search(list *l, char i) {
 	int step = 1;
 	node *aux = l->root;
 
 	if (l->size == 0) return NULL;
 
 	while (aux != NULL) {
-		if (aux->item == i) return aux;
+		if (aux->item == i) return step;
 		aux = aux->next;
 		step++;
 	}

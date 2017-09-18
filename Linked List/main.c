@@ -18,13 +18,14 @@ int main(void) {
 			getchar();
 
 			add(l, item);
+			printf("%c was successfully added to the list.\n", item);
 			break;
 		case 'S': case 's':
 			printf("\nSearch: ");
 			scanf("%c", &item);
 			getchar();
 
-			search(l, item);
+			printf("%c was found on position #%d\n", item, search(l, item));
 			break;
 		case 'R': case 'r':
 			printf("\nRemove: ");
@@ -32,6 +33,7 @@ int main(void) {
 			getchar();
 
 			remove_node(l, item);
+			printf("%c was successfully removed of the list.\n", item);
 			break;
 		case 'D': case 'd':
 			dump(l);
